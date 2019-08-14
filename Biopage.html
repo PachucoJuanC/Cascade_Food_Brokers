@@ -1,40 +1,52 @@
 <!DOCTYPE html>
 <html>
+<head>
 <title>CFB Team</title>
+<link rel="icon" href="https://s3-us-west-2.amazonaws.com/cfbwebsiteimages/favicon.png" type="image/icon type">
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script language="JavaScript" src="script.js"></script>
-<link rel="stylesheet" href="stylesheet.css">
+<link rel="stylesheet" href="stylesheet.css?version=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
 body {font-family: "Times New Roman", Georgia, Serif;}
 h1,h2,h3,h4,h5,h6 {
     font-family: "Playfair Display";
     letter-spacing: 5px;
-}
 </style>
+</head>
+
 <body>
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
-    <a href="index.html" class="w3-bar-item w3-button">Cascade Food Brokers</a>
+    <a href="#home" class="w3-bar-item w3-left w3-button">Cascade Food Brokers</a>
     <!-- Right-sided navbar links. Hide them on small screens -->
-    <div class="w3-right w3-hide-small">
-      <a href="index.html#about" class="w3-bar-item w3-button">About</a>
-      <a href="index.html#retail" class="w3-bar-item w3-button">Retail</a>
-      <a href="index.html#foodservice" class="w3-bar-item w3-button">Food Service</a>
-      <a href="#team" class="w3-bar-item w3-button">The Team</a>
-      <a href="index.html#contact" class="w3-bar-item w3-button">Contact</a>
+    
+      <a href="#about" class="w3-bar-item w3-right w3-button w3-hide-small">About</a>
+      <a href="#retail" class="w3-bar-item w3-right w3-button w3-hide-small">Retail</a>
+      <a href="#foodservice" class="w3-bar-item w3-right w3-button w3-hide-small">Food Service</a>
+      <a href="Biopage.html#team" class="w3-bar-item w3-right w3-button w3-hide-small">The Team</a>
+      <a href="#contact" class="w3-bar-item w3-right w3-button w3-hide-small">Contact</a>
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
     </div>
+
+    <div id="demo" class="w3-bar-block w3-green w3-hide w3-hide-large w3-hide-medium">
+  <a href="#about" class="w3-bar-item w3-button">About</a>
+  <a href="#retail" class="w3-bar-item w3-button">Retail</a>
+  <a href="#foodservice" class="w3-bar-item w3-button">Food Service</a>
+  <a href="Biopage.html#team" class="w3-bar-item w3-button">The Team</a>
+  <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+</div>
   </div>
 </div>
 
 <!-- Header -->
-<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:300px" id="home">
+<header class="w3-display-container w3-content w3-wide" style="max-width:2000px;min-width:300px" id="home">
   <img class="w3-image" id="branding" src="https://s3-us-west-2.amazonaws.com/cfbwebsiteimages/cfb_cuttingboard.jpeg" alt="Cutting Board with cascadefoodbrokers logo" style="width:100%">
-  
+ 
   </div>
 
   <div class="w3-container w3-padding-32" id="team">
@@ -44,33 +56,32 @@ h1,h2,h3,h4,h5,h6 {
     </p>
   </div>
 
-  <div class="w3-row-padding w3-grayscale">
+  <div class="w3-row-padding">
     <div class="w3-col l3 m6 w3-center w3-margin-bottom">
-      <img src="https://s3-us-west-2.amazonaws.com/cfbwebsiteimages/cfb_waterfall.png" alt="Renee Wolf" style="width:100%">
+      <img src="https://cfbwebsiteimages.s3-us-west-2.amazonaws.com/Renee_Wolf_headshot.JPG" alt="Renee Wolf" style="width:100%">
       <h3>Renee Wolf</h3>
       <p class="w3-opacity">General Manager</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum. Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
-      Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+      <p>Renne has been in the brokerage business for over 25 years. As the General Manager she helps guide the Cascade Food Brokers team with a collaborative approach that utilizes her skills, experience, and vast industry knowledge. Her leadership has helped Cascade Food Brokers expand into markets all across the Pacific Northwest with a stellar line up of manufactures that are sure to help your business grow. Renee particularly enjoys calling on key accounts and builds meaningful, long-term relationships with our customers. 
+      </p>
+      <p><button class="w3-button w3-light-grey w3-block"> <a href="mailto:renee@cascadefoodbrokers.com?Subject=Hello%20Renee" target="_top">Email Renee</a></button></p>
     </div>
     <div class="w3-col l3 m6 w3-center w3-margin-bottom">
       <img src="https://s3-us-west-2.amazonaws.com/cfbwebsiteimages/cindy+bio.JPG" alt="Cindy Kauffman" style="width:100%">
       <h3>Cindy Kauffman</h3>
       <p class="w3-opacity">Account Executive</p>
-      <p>Cindy has been in sales for 25 years and has loved every moment of it. She currently oversees the Pacific Northwest with a focus on the Portland Metro Region. She has made lasting connections with her food industry knowledge and high-energy personality. Many of her clients are proud to call her a business associate and friend. Now an Account executive at Cascade Food Brokers, Cindy continues to be well known in the industry for her commitment to her clients and partnering with them to take their business to the next level. Phasellus eget enim eu lectus faucibus vestibulum. 
-      </p>
-      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+      <p>Cindy has been in sales for 25 years and has loved every moment of it. She currently oversees the Pacific Northwest with a focus on the Portland Metro Region. She has made lasting connections with her food industry knowledge and high-energy personality. Many of her clients are proud to call her a business associate and friend. Now an Account executive at Cascade Food Brokers, Cindy continues to be well known in the industry for her commitment to her clients and partnering with them to take their business to the next level.</p>
+      <p><button class="w3-button w3-light-grey w3-block"> <a href="mailto:cindy@cascadefoodbrokers.com?Subject=Hello%20Cindy" target="_top">Email Cindy</a></button></p>
     </div>
     <div class="w3-col l3 m6 w3-center w3-margin-bottom">
       <img src="https://s3-us-west-2.amazonaws.com/cfbwebsiteimages/rob+bio.jpg" alt="Rob Servoss" style="width:100%">
       <h3>Rob Servoss</h3>
       <p class="w3-opacity">Account Executive</p>
-      <p>Rob started in the foodservice business in 1981 as a street sales associate with Pacific Gamble Robinson.
+      <p>Rob started in the foodservice business in 1981 as a sales associate with Pacific Gamble Robinson.
       Rob advanced to the roll of sales manager, buyer, and in 1986 Category Manager for the newly created Food Services of America. 
-      In 1995 Rob bought a small country grocery store in his home town of Mt. Vernon, WA and operated the store until 2003 when he went to work for Acosta Sales & Marketing until 2012. 
+      In 1995 Rob bought a small country grocery store in his hometown of Mt. Vernon, WA and operated the store until 2003 when he went to work for Acosta Sales & Marketing until 2012. 
       Rob then joined Cascade Food Brokers where he is currently employed as a sales associate covering Western Washington, Wenatchee & Yakima.
       </p>
-      <p><button class="w3-button w3-light-grey w3-block">Contact</button>
+      <p><button class="w3-button w3-light-grey w3-block"> <a href="mailto:rob@cascadefoodbrokers.com?Subject=Hello%20Rob" target="_top">Email Rob</a></button>
       </p>
     </div>
 
@@ -78,28 +89,28 @@ h1,h2,h3,h4,h5,h6 {
       <img src="https://s3-us-west-2.amazonaws.com/cfbwebsiteimages/dave+bio.jpg" alt="Dave Rhodes" style="width:100%">
       <h3>Dave Rhodes</h3>
       <p class="w3-opacity">Account Executive</p>
-      <p>As an Account Executive at Cascade Food Brokers, Dave Rhodes describes himself as a master butcher, avid goat watcher, surf perch fisherman, and professional beer savant. <br> As the head of Menu Development at Wok’In’BOL, Dave explores the flavors of fusion cooking using the extensive array of fine meats and sauces available at Cascade Food Brokers. His unique combination of menu ideas and industry trends makes Dave a valuable resource for your growing business. Contact Dave here at Cascade Food Brokers today and see what he is cooking up!  
+      <p>As an Account Executive at Cascade Food Brokers, Dave Rhodes describes himself as a master butcher, avid goat watcher, surf perch fisherman, and professional beer savant. As the head of Menu Development at Wok’In’BOL, Dave explores the flavors of fusion cooking using the extensive array of fine meats and sauces available at Cascade Food Brokers. His unique combination of menu ideas and industry trends makes Dave a valuable resource for your growing business. Contact Dave here at Cascade Food Brokers today and see what he is cooking up!  
       </p>
-      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+      <p><button class="w3-button w3-light-grey w3-block"> <a href="mailto:dave@cascadefoodbrokers.com?Subject=Hello%20Dave" target="_top">Email Dave</a> </button></p>
     </div>
   </div>
     
-  <div class="w3-row-padding w3-grayscale">
+  <div class="w3-row-padding">
     <div class="w3-col l3 m6 w3-center w3-margin-bottom">
       <img src="https://s3-us-west-2.amazonaws.com/cfbwebsiteimages/louie+bio+2.JPG" alt="Louie Agosto" style="width:100%">
       <h3>Louie Agosto</h3>
       <p class="w3-opacity">Account Executive</p>
       <p>Louie Agosto has been working in the meat business for much of his life. A meat cutter with 20 years’ experience, he knows his way around the meat counter and beyond. Starting off his career at Ray’s Food Place was the perfect launching pad for Louie. He advanced through the ranks to ultimately become the Meat Manager of one of the busiest stores in the chain. It’s that same depth of knowledge and dedication that he brings to the food broker world as the Southern Oregon Account Executive for Cascade Food Brokers. </p>
-      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+      <p><button class="w3-button w3-light-grey w3-block"> <a href="mailto:louie@cascadefoodbrokers.com?Subject=Hello%20Louie" target="_top">Email Louie</a> </button></p>
     </div>
     <div class="w3-col l3 m6 w3-center w3-margin-bottom">
       <img src="https://s3-us-west-2.amazonaws.com/cfbwebsiteimages/jodi+bio+2.jpg" alt="Jodie Wallerstedt" style="width:100%">
       <h3>Jodie Wallerstedt</h3>
       <p class="w3-opacity">Account Executive</p>
-      <p>Jodie Wallerstedt  has been in the industry for 15+ years and brings a lot of experience to the table.  She has mainly worked with  major store chain groups - Albertson’s/Safeway’s,  Kroger and WinCo.  She has strong vendor support skills as well as assisting in grand and re-grand openings at store level. She enjoys working with manufacturers, selling product and doing food shows. Growing our clients and sales is her top priority.
-      She truly believes all for one and one for all- It takes a team to reach great success. 
+      <p>Jodie Wallerstedt has been in the industry for 15+ years and brings a lot of experience to the table.  She has mainly worked with major store chain groups - Albertson’s/Safeway’s,  Kroger and WinCo.  She has strong vendor support skills as well as assisting in grand and re-grand openings at store level. She enjoys working with manufacturers, selling product and doing food shows. Growing our clients and sales is her top priority.
+      She truly believes all for one and one for all- It takes a team to reach great success.
 </p>
-      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+      <p><button class="w3-button w3-light-grey w3-block"> <a href="mailto:jodie@cascadefoodbrokers.com?Subject=Hello%20Jodie" target="_top">Email Jodie</a> </button></p>
     </div>
   </div>
 
